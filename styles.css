@@ -89,6 +89,7 @@ em { font-style: normal; color: var(--indigo); }
   font-size: clamp(2.6rem, 6vw, 5.2rem);
   line-height: 0.98; letter-spacing: -0.035em; text-wrap: balance;
 }
+.hero h1 .h1-accent { display: block; color: var(--indigo); }
 .lede { font-size: clamp(1.1rem, 1.5vw, 1.3rem); max-width: 34em; color: var(--ink-soft); }
 .triad-inline { display: flex; flex-wrap: wrap; gap: 0.5rem 1.6rem; font-weight: 800; font-size: clamp(1.3rem, 2.2vw, 1.8rem); letter-spacing: -0.02em; }
 .triad-inline span { display: inline-flex; align-items: center; gap: 0.5rem; }
@@ -163,12 +164,21 @@ em { font-style: normal; color: var(--indigo); }
 }
 
 .values { margin-top: clamp(2.5rem, 5vw, 4rem); padding: clamp(1.5rem, 3vw, 2.5rem); background: var(--paper-2); }
-.values h3 { font-weight: 800; font-size: 1.3rem; letter-spacing: -0.01em; margin-bottom: 1.5rem; }
-.values-list { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.5rem 2rem; }
+.values h3 { font-weight: 800; font-size: 1.3rem; letter-spacing: -0.01em; margin-bottom: 0.4rem; }
+.values-head { margin-bottom: 1.75rem; }
+.values-head p { color: var(--ink-soft); max-width: 40em; }
+.values-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.75rem 2.5rem; }
 .values-list li { border-top: 6px solid var(--c); padding-top: 0.8rem; }
 .values-list h4 { font-weight: 700; font-size: 1.1rem; line-height: 1.2; margin-bottom: 0.35rem; }
 .values-list p { color: var(--ink-soft); font-size: 0.97rem; }
-@media (max-width: 64rem) { .values-list { grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); } }
+.values-list .values-more { border-top: 0; padding-top: 0; }
+.values-more a {
+  display: flex; flex-direction: column; height: 100%; min-height: 7rem;
+  padding: 0.9rem 1rem; border: 2px dashed var(--ink-soft); text-decoration: none; transition: background 0.2s;
+}
+.values-more a:hover { background: var(--paper); }
+.values-more .plus { font-weight: 800; font-size: 1.6rem; line-height: 1; margin-bottom: 0.4rem; }
+@media (max-width: 52rem) { .values-list { grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); } }
 
 /* ---------- how: leaders / everyone ---------- */
 .leaders { margin-top: clamp(4rem, 9vw, 7rem); }

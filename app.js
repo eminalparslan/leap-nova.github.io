@@ -27,9 +27,14 @@
 
   /* ---------- home: values ---------- */
   const values = $("values-list");
-  if (values) L.values.forEach((v, i) => {
-    values.append(el("li", hue(i), `<h4>${v.name}</h4><p>${v.text}</p>`));
-  });
+  if (values) {
+    L.values.forEach((v, i) => {
+      values.append(el("li", hue(i), `<h4>${v.name}</h4><p>${v.text}</p>`));
+    });
+    // the list is open-ended: invite more common ground
+    values.append(el("li", "values-more",
+      `<a data-interest href="#"><span class="plus" aria-hidden="true">+</span><h4>What does your community hold?</h4><p>Help us find the next value we all share.</p></a>`));
+  }
 
   /* ---------- home: leaders at the table, everyone in the work ---------- */
   const dl = $("dots-leaders");
