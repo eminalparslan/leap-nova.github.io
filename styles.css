@@ -83,6 +83,8 @@ em { font-style: normal; color: var(--indigo); }
   gap: clamp(2rem, 5vw, 5rem); align-items: center;
 }
 .hero-text { display: grid; gap: 1.5rem; }
+.hero-solo { grid-template-columns: minmax(0, 1fr); }
+.hero-solo h1 { max-width: 14em; }
 .hero .eyebrow { margin-bottom: 0; }
 .hero h1 {
   font-weight: 800;
@@ -129,7 +131,7 @@ em { font-style: normal; color: var(--indigo); }
 .section .mv-item h2 { font-weight: 700; font-size: 1.1rem; letter-spacing: 0; color: var(--c); margin-bottom: 0.75rem; }
 .mv-item p { font-size: clamp(1.25rem, 2vw, 1.6rem); line-height: 1.3; font-weight: 500; letter-spacing: -0.01em; max-width: 24em; }
 
-/* ---------- how: UN ---------- */
+/* ---------- idea page: UN analogy ---------- */
 .un { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2rem clamp(2rem, 5vw, 5rem); align-items: start; }
 .un h2 { margin-bottom: 1.25rem; }
 .un p { max-width: 34em; color: var(--ink-soft); font-size: 1.1rem; }
@@ -143,8 +145,7 @@ em { font-style: normal; color: var(--indigo); }
 .un-compare > div:last-child dd::before { content: "≠"; color: var(--saffron); }
 @media (max-width: 52rem) { .un { grid-template-columns: 1fr; } }
 
-/* ---------- how: shared values, not shared actions ---------- */
-.principle { margin-top: clamp(4rem, 9vw, 7rem); }
+/* ---------- how: shared values guide shared action ---------- */
 .principle-lede { margin-top: 1.25rem; font-size: clamp(1.1rem, 1.6vw, 1.3rem); max-width: 40em; color: var(--ink-soft); }
 .principle-lede em { color: var(--ink); font-weight: 700; }
 

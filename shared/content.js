@@ -6,8 +6,8 @@ window.LEAP = {
   name: "LEAP",
   fullName: "Leaders Emerge and Partner",
   region: "Northern Virginia",
-  domain: "leapnova.org",
-  email: "hello@leapnova.org", // placeholder until a real inbox exists
+  domain: "leap-nova.org",
+  email: "hello@leap-nova.org",
 
   /* Interest form. Leave empty until the form exists: every "Get involved"
      button falls back to an email to the address above. */
@@ -130,16 +130,16 @@ window.LEAP = {
   boardSeats: 7,
   board: [
     {
-      name: "[Board member name]",
+      name: "Emin Arslan",
       role: "Founding board member",
-      community: "[Community or organization]",
-      bio: "[Two or three sentences: who you are, the community you come from, and why you started LEAP.]",
-      photo: ""
+      community: "American Turkish Friendship Association",
+      bio: "A longtime participant in, and occasional organizer of, interfaith dialogue events in Austin and Northern Virginia. I helped start LEAP so that the conversations I love can lead to work we do together.",
+      photo: "img/board-1.jpg"
     },
     {
-      name: "[Board member name]",
+      name: "Yusuf Arslan",
       role: "Founding board member",
-      community: "[Community or organization]",
+      community: "American Turkish Friendship Association",
       bio: "[Two or three sentences: who you are, the community you come from, and why you started LEAP.]",
       photo: ""
     }
