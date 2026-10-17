@@ -132,15 +132,13 @@ window.LEAP = {
     {
       name: "Emin Arslan",
       role: "Founding board member",
-      community: "American Turkish Friendship Association",
       bio: "A longtime participant in, and occasional organizer of, interfaith dialogue events in Austin and Northern Virginia. I helped start LEAP so that the conversations I love can lead to work we do together.",
       photo: "img/board-1.jpg"
     },
     {
       name: "Yusuf Arslan",
       role: "Founding board member",
-      community: "American Turkish Friendship Association",
-      bio: "[Two or three sentences: who you are, the community you come from, and why you started LEAP.]",
+      bio: "A leader in George Washington University's international community. I helped start LEAP so that young leaders like me can build across communities, not just within them.",
       photo: ""
     }
   ]

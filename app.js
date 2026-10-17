@@ -112,7 +112,7 @@
         <div class="photo">${photo}</div>
         <h3>${m.name}</h3>
         <p class="role">${m.role}</p>
-        <p class="community">${m.community}</p>
+        ${m.community ? `<p class="community">${m.community}</p>` : ""}
         <p class="bio">${m.bio}</p>`));
     });
     for (let i = L.board.length; i < L.boardSeats; i++) {
