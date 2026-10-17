@@ -70,7 +70,8 @@
   /* ---------- home: ways in ---------- */
   const paths = $("paths");
   if (paths) L.paths.forEach((p, i) => {
-    const link = p.link ? `<a class="path-link" href="${p.link}">${p.linkText} →</a>` : "";
+    const link = p.form ? `<a class="path-link" data-interest href="#">${p.linkText} →</a>`
+      : p.link ? `<a class="path-link" href="${p.link}">${p.linkText} →</a>` : "";
     paths.append(el("li", hue(i), `<h3>${p.name}</h3><p>${p.text}</p>${link}`));
   });
 

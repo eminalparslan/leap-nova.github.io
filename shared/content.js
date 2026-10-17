@@ -9,9 +9,9 @@ window.LEAP = {
   domain: "leap-nova.org",
   email: "hello@leap-nova.org",
 
-  /* Interest form. Leave empty until the form exists: every "Get involved"
-     button falls back to an email to the address above. */
-  interestForm: "",
+  /* Interest form (Airtable intake). Every interest button links here; if
+     left empty, they fall back to an email to the address above. */
+  interestForm: "https://airtable.com/appg8LdKgwUgHpp3a/pagHdkv9zymcI78il/form",
 
   /* Connect. Grow. Serve. */
   triad: [
@@ -108,7 +108,7 @@ window.LEAP = {
     { name: "Outreach", hue: "olive" }
   ],
 
-  /* Ways in */
+  /* Ways in. A path links either to a page (link) or to the interest form (form: true). */
   paths: [
     {
       name: "Join the board",
@@ -118,11 +118,15 @@ window.LEAP = {
     },
     {
       name: "Bring your community",
-      text: "Do you lead a congregation, cultural association, student group, or civic organization? Let's find the problems we share."
+      text: "Do you lead a congregation, cultural association, student group, or civic organization? Let's find the problems we share.",
+      form: true,
+      linkText: "Tell us about your community"
     },
     {
       name: "Shape a committee",
-      text: "Have an idea for a project, or a committee we haven't thought of? This is the time to bring it."
+      text: "Have an idea for a project, or a committee we haven't thought of? This is the time to bring it.",
+      form: true,
+      linkText: "Propose an idea"
     }
   ],
 
