@@ -64,7 +64,8 @@ em { font-style: normal; color: var(--indigo); }
   display: flex; justify-content: space-between; align-items: center; gap: 1rem;
   padding-top: 1.1rem; padding-bottom: 1.1rem;
 }
-.brand { display: inline-flex; align-items: baseline; text-decoration: none; font-weight: 800; font-size: 1.4rem; letter-spacing: 0.02em; }
+/* font-size keeps the 1.4rem layout footprint (header height is CTA-driven); scale grows only the paint */
+.brand { display: inline-flex; align-items: baseline; text-decoration: none; font-weight: 800; font-size: 1.4rem; letter-spacing: 0.02em; transform: scale(1.9); transform-origin: left center; }
 .brand svg { height: 0.95em; width: auto; fill: var(--saffron); transform: translateY(0.06em); }
 .top nav { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 0.4rem clamp(0.9rem, 2.5vw, 1.8rem); }
 .top nav a { text-decoration: none; font-weight: 500; font-size: 0.95rem; }
